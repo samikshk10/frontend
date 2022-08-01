@@ -1,7 +1,7 @@
 
 *{
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
+
 }
 body{
     margin: 0;
@@ -11,8 +11,6 @@ body{
     font-family: 'Roboto', sans-serif; */
     font-weight: 400; 
     font:17px/1.53 'Roboto', sans-serif;
-
-
 }
 .banner-part{
     height: 100vh;
@@ -27,9 +25,8 @@ body{
    bottom:0;
    z-index:0;
    background-repeat: no-repeat;
-   background-position: center;
+   background-position: bottom;
     background-size: cover;
-    
 }
 
 
