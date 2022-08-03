@@ -13,10 +13,105 @@ body{
     font:17px/1.53 'Roboto', sans-serif;
 }
 .banner-part{
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
-  
+  display: flex;
+  flex-wrap: wrap;
+   align-items: center; /*vertically center items */
+  justify-content: center;/*horizontally center items*/
+text-align: center;
 }
+
+.banner-part::before{ /* For  button to stay inside div element*/
+    content:'';
+    height: 100vh;
+    display: block;
+}
+
+
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    padding: 15px 50px; 
+    
+}
+
+.logo a {
+    display: inline-block;
+}
+
+#header .container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+
+
+
+.banner-part::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(191,61, 66, 1);
+    mix-blend-mode:darken;
+  
+ 
+    
+}
+
+ .banner-content {
+   position: relative;
+   z-index: 9;
+        color: #fffdfd;
+        max-width: 500px;
+        
+
+}
+
+.banner-content p{
+    margin: 0 0 25px;
+}
+
+.overline-text {
+    text-transform: uppercase;
+    font-size: 34px;
+
+}
+
+h1{
+    font-weight: 700;
+    font-size: 65px;
+    margin:0 0 45px;
+   
+}
+
+
+.btn{
+    text-decoration: none;
+    color: #fffdfd;
+
+}
+
+.btn.primary{
+    background-color: #333;
+    width: 230px;
+    padding: 15px;
+     border-radius:30px;
+    
+    display: block;
+    border: 2px solid white;
+    /* vertical-align: top; */
+    margin: 0 auto 0 auto;
+}
+
 .banner-img{
    position: absolute;
    top:0;
@@ -28,7 +123,12 @@ body{
    background-position: bottom;
     background-size: cover;
 }
-/**/
+
+
+.nav span{
+    display: block;
+}
+
 
 
 
