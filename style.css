@@ -257,6 +257,10 @@ cursor: pointer;
 }
 .products-part .col .product-image{
   height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
