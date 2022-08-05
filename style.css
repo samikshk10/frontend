@@ -49,6 +49,8 @@ h2 {
 .style {
   position: relative;
   padding-left: 44px;
+  vertical-align: top;
+  display: inline-block;
 }
 
 .style::after {
@@ -64,6 +66,7 @@ h2 {
   left: 0;
   right: 0;
   bottom: 0;
+
 }
 
 .logo a {
@@ -134,6 +137,7 @@ h1 {
   border: 2px solid white;
   /* vertical-align: top; */
   margin: 0 auto 0 auto;
+cursor: pointer;
 }
 
 .banner-img {
@@ -151,13 +155,13 @@ h1 {
 .nav span {
   display: block;
 }
-
+.four-columns,
 .two-columns {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -20px;
 }
-
+.four-columns,
 .two-columns .col {
   width: 50%;
   padding: 0 20px;
@@ -197,3 +201,56 @@ h1 {
   border-radius: 30px;
   border: 2px solid #bf3d42;
 }
+
+
+.products-part{
+  text-align: center; 
+}
+
+.products-part h2{
+  line-height: 1;
+  margin-bottom: 17px;
+}
+
+.products-part .style::after{
+  top: -6px;
+}
+
+.products-part p{
+  margin: 0;
+
+}
+
+.container.lg{
+  max-width: 1310px;
+}
+
+.four-columns .col{
+  width: auto;
+
+}
+
+.product-details{
+    background-color:#121212;
+    border-radius: 23px;
+    overflow: hidden;
+}
+
+.product-details .product-image{
+  height: 400px;
+  position: relative;
+}
+
+.product-code{
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  color: #fff;
+background-color:#191919;
+font-family: 'Poppins',sans-serif;
+font-size: 25px;
+border: 2px solid #b03d42;
+line-height: 62px;
+text-align: center;
+}
+
