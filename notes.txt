@@ -1,0 +1,3 @@
+defer is used to link the js file in the head
+
+secondary class  &.

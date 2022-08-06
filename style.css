@@ -4,6 +4,7 @@
 }
 body {
   margin: 0;
+  color: #010104;
   /* font-size: 17px;
     line-height: 1.53;
      font-family: 'Poppins', sans-serif;
@@ -272,7 +273,11 @@ cursor: pointer;
 .products-part .col:nth-child(3) .product-image
 {
   height:250px;
+
+
 }
+
+
 
 .products-part .col:last-child .product-image
 {
@@ -311,7 +316,7 @@ z-index:9;
 
 
 .product-details p{
-  margin: 0 0 70px;
+  margin: 0 0 0;
 }
 
 
@@ -327,4 +332,8 @@ z-index:9;
 .products-part .button-wrap .btn.primary{
 border: 2px solid #b03d42;
 }
+
+
+
+
 

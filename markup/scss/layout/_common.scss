@@ -1,0 +1,144 @@
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+
+&.lg{
+    max-width: 1310px;
+}
+  }
+
+  .style {
+    position: relative;
+    padding-left: 44px;
+    vertical-align: top;
+    display: inline-block;
+
+
+    &::after{
+        content: "";
+  
+        background: url("/img/chips.png") no-repeat center / cover;
+        display: block;
+        width: 42px;
+        height: 42px;
+      
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+  }
+
+  .banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  .overline-text {
+    text-transform: uppercase;
+    font-size: 34px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    color: #fffdfd;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    @include animate(all,0.35s,ease-in-out);
+
+    &.primary{
+        background-color: #333;
+  width: 230px;
+  padding: 15px;
+  border-radius: 30px;
+
+  display: block;
+  border: 2px solid white;
+  /* vertical-align: top; */
+  margin: 0 auto 0 auto;
+cursor: pointer;
+
+&:hover{
+    border-color: #333;
+    background-color: $white;
+    color: $black;
+}
+
+
+    }
+
+
+
+
+
+    &.secondary{
+        color: white;
+        background-color: #bf3d42;
+        min-width: 180px;
+        padding: 15px;
+        border-radius: 30px;
+        border: 2px solid #bf3d42;
+
+        &:hover{
+            background-color: $white;
+            border-color: #bf3d42;
+            color: $black;
+            
+        }
+    }
+  }
+
+  .four-columns,
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+   padding: 40px 0;
+
+  .col{//child class dont need &
+    flex:1;
+    padding: 0 20px;
+
+    &.large.col{
+        flex:auto;
+        width: 58.33%; /*12*7 /100 */
+    }
+
+    &.small.col{
+        flex:auto;
+        width: 41.66%;  /*100-58.33 */
+    }
+
+    
+  }
+}
+
+.four-columns{
+    margin:0 -10px;
+
+    &.col{
+        width: auto;
+        // flex:1;
+        padding: 0 10px;
+    }
+}
+
+
+
+
+
+
+
+
+

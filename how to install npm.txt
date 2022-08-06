@@ -1,0 +1,24 @@
+use node v14.20.0
+
+first step:
+cmd-------  npm install -g gulp
+
+
+
+=====folder/markup====
+second step:
+windows powershell ---- npm install
+
+
+
+////window powershell markup -------------   npm i gulp-cli
+
+
+or//// npm i -g gulp-cli ////for global scope declaration(-g)
+
+i->install
+
+
+markup ----------------- gulp
+
+Window Powershell------ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
