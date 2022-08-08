@@ -90,6 +90,12 @@
 	height: $height;
 }
 
+@mixin align-vertical($alignment)
+{
+	display: inline-block;
+	vertical-align: $alignment;
+}
+
 /// font-smothing
 /// @include font-smoothing(on);
 /// @include font-smoothing(off);
@@ -256,4 +262,13 @@ $animation-speed: .3s !default;
 @mixin rem-font-size($pxSize) {
 	font-size: $pxSize;
 	font-size: ($pxSize / 10px) + rem;
+}
+
+
+
+@mixin flex($wrap,$align,$halign) {
+	display: flex;
+	flex-wrap: $wrap;
+	justify-content: $align;
+	align-items: $halign;
 }
