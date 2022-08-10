@@ -1,28 +1,41 @@
 .banner-part {
     /* height: 100vh; */
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center; /*vertically center items */
-    justify-content: center; /*horizontally center items*/
-    text-align: center;
+    // position: relative;
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: center; /*vertically center items */
+    // justify-content: center; /*horizontally center items*/
+    // text-align: center;
 
     .banner-slider{
-        padding: 65px 0;
+        // padding: 65px 0;
         position: relative;
         display: flex;
-    
-        align-items: center; /*vertically center items */
-        justify-content: center; /*horizontally center items*/
+            height: 100vh;
+       
+            
+
+        .slick-track{
+            display: flex !important;
+            height: 100%;
+        }
+
+        .slick-slide{
+            position: relative;
+            height:auto;
+            @include flex(wrap,center,center);
+        }
+
+      
         
 
-        &::before{
-            /* For  button to stay inside div element*/
-        content: '';
-        height: 100vh;
-        display: block;
-        }
-    
+        // &::before{
+        //     /* For  button to stay inside div element*/
+        // content: '';
+        // height: 100vh;
+        // display: block;
+        // }
+    .banner-img{
         &::after{
             content: "";
         position: absolute;
@@ -32,7 +45,11 @@
         right: 0;
         background-color: rgba(191, 61, 66, 1);
         mix-blend-mode: darken;
+        pointer-events: none;
+
         }  
+    }
+        
         
     }
     h1{
@@ -336,7 +353,44 @@ i{
  
   
   
+.slick-dots{
+        @extend %listreset;
+        position: absolute;
+        bottom:72px;
+        left:0;
+        right:0;
+        display:flex;
+        @include flex(wrap,center,center);
 
+
+        li{
+            padding: 0 2px 0 1px;
+
+            &.slick-active{
+                button{
+                    @include size(26px);
+                    background-color: transparent;
+        
+                }
+            }
+        }
+        button{
+            padding:0;
+            display: block;
+            @include hide-text;
+            background-color: #f9f9fb;
+            @include size(18px);
+            border-radius: 50%;
+            border:3px solid #f9f9fb;
+        @include animate(all,0.35s,ease);
+
+            &:hover{
+                @include size(26px);
+                background-color: transparent;
+            }
+        }
+
+}
 
   
 

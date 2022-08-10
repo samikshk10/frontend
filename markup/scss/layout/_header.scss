@@ -16,6 +16,76 @@
     }
   }
 
-.nav spam{
-display: block;
-}
+
+  .nav-opener{
+    @include size (32px,20px);
+    display: block;
+    position: relative;
+  
+    span{
+      position: absolute;
+      top: 0;
+      display: block;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: $white;
+      &:nth-child(2)
+      {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 6px;
+        right: 6px;
+      }
+
+      &:last-child{
+        top:auto;
+        bottom: 0;
+      }
+    }
+  }
+
+  .menu-wrap{
+    position:fixed;
+    top: 0;
+    right:0;
+    left:0;
+    bottom: 0;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color:$white;
+    transform: scale(0);
+    @include animate(transform,0.5s,ease);
+
+    ul{
+      @extend %listreset;
+      li{
+        margin-bottom: 30px;
+      }
+      a{
+        text-decoration: none;
+        color: $black;
+        display: block;
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: capitalize;
+        @include animate(color,0.35s,ease);
+
+
+        &:hover{
+          color: $red;
+        }
+      }
+    }
+
+  }
+
+
+  .nav-active{
+    .menu-wrap{
+      transform: scale(1);
+    }
+  }

@@ -9,6 +9,7 @@ $('.feedback-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    autoPlayTimer:0.5,
     prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><i class="icon-previous"></i></button>',
     nextArrow: '<button class="slick-next" aria-label="Next" type="button"><i class="icon-next"></i></button>',
    
@@ -44,14 +45,15 @@ $('.feedback-slider').slick({
             
   
   $('.banner-slider').slick({
-    dots: false,
+    dots: true,
     infinite: false,
     speed: 300,
- 
+ autoplay:true,
+ autoPlayTimer:1,
     slidesToShow: 1,
     slidesToScroll: 1,
 
-    arrow:false,
+    arrows:false,
     prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><i class="icon-previous"></i></button>',
     nextArrow: '<button class="slick-next" aria-label="Next" type="button"><i class="icon-next"></i></button>',
    
