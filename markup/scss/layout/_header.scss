@@ -74,7 +74,6 @@
         text-transform: capitalize;
         @include animate(color,0.35s,ease);
 
-
         &:hover{
           color: $red;
         }
@@ -88,4 +87,13 @@
     .menu-wrap{
       transform: scale(1);
     }
+
+    .nav-opener{
+      z-index: 99;
+    }
+
+    span{
+      background-color: $black;
+    }
+
   }
